@@ -4,7 +4,7 @@
 
 - public IP >>> 18.185.188.91
 - SSH port >>> 2200
-- url >>> http://3.123.6.230.xip.io/
+- url >>> http://18.185.188.91.xip.io/
 
 ## Packages installed
 
