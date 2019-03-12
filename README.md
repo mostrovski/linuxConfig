@@ -1,10 +1,8 @@
 # Linux Server Configuration and Deployment of the Item Catalog App
 
-## Access
+## Results
 
-- public IP >>> 3.123.6.230
-- SSH port >>> 2200
-- url >>> http://3.123.6.230.xip.io/
+- url >>> http://chessreads.info/
 
 ## Packages installed
 
@@ -68,14 +66,14 @@
    *Virtual Host*
    ```
    <VirtualHost *:80>
-       ServerName  publicIP
+       ServerName  chessreads.info
        ServerAdmin my email
        WSGIScriptAlias / /var/www/catalog/catalog/catalog.wsgi
        <Directory /var/www/catalog/catalog/>
             Order allow,deny
             Allow from all
        </Directory>
-       Alias /static /var/www/FlaskApp/ItemCatalog/static
+       Alias /static /var/www/catalog/catalog/static
        <Directory /var/www/catalog/catalog/static/>
           Order allow,deny
           Allow from all
